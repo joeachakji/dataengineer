@@ -1,0 +1,35 @@
+API
+
+connection id : stock_api
+connection type: HTTP
+Host: https://query1.finance.yahoo.com/
+
+extra:
+
+			{
+				"endpoint":"/v8/finance/chart/NAUKRI.NS?region=US&lang=en-US&includePrePost=false&interval=2m&useYfid=true&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance",
+				"header":{
+					"Content-type":"application/json",
+					"User-Agent":"Mozilla/5.0"						
+					}
+			}
+			
+-------------------------------------------
+
+
+connection id : minio
+connection type: Amazon web services
+
+Aws key    : minio
+Aws pwd    : minio123
+
+extra:
+
+			{
+				"endpoint":"http://host.docker.initernal:9000"
+			}
+			
+-------------------------------------------------
+
+
+https://query1.finance.yahoo.com/v8/finance/chart/NAUKRI.NS?region=US&lang=en-US&includePrePost=false&interval=2m&useYfid=true&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance
